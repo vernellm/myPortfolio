@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	Inventory: <hr>
+	<table>
+		<tr>
+			<th> &#128176; </th> <!-- money bag emoji -->
+			<th> &#128156; </th> <!-- purple heart emoji -->
+			<th> &#128481; </th> <!-- sword emoji -->
+			<th> &#128273; </th> <!-- key emoji -->
+		</tr>
+		<tr>
+			<td id="gp">0</td>
+			<td id="hp">0</td>
+			<td id="ap">0</td>
+			<td id="keys">0</td>
+		</tr>
+	</table>
+	<script>
+		var queryString = new URLSearchParams(location.search);
+		gp.innerText = queryString.get('gp');
+		hp.innerText = queryString.get('hp');
+		ap.innerText = queryString.get('ap');
+		keys.innerText = queryString.get('keys');
+	</script>
+
+</body>
+</html>
