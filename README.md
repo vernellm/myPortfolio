@@ -1,7 +1,7 @@
 Hello and Welcome to my portfolio!
 
-My name is Vernell Mangum, currently a Computer Science graduate from The University 
-of New Orleans with a achelor's Degree in Computer Sciece.
+My name is Vernell Mangum, I am a graduate from The University 
+of New Orleans with a Bachelor's Degree in Computer Sciece.
 I am currently living In New Orleans, LA and I am open
 to any job opportunities, remote work or on-site.
 
