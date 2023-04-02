@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Vernell Mangum 
+% Based off of: https://github.com/thienlongtran/resume-update-overleaf-sync/blob/main/resume.tex
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADER SETINGS----------
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://www.linkedin.com/in/vtmangum17}
+\def \linkedintext {/vtmangum17}
+
+\def \emailicon {\faEnvelope}
+\def \emaillink {mailto:vtmangum@gmail.com}
+\def \emailtext {vtmangum@gmail.com}
+
+\def \githubicon {\faGithub}
+\def \githublink {https://github.com/vernellm}
+\def \githubtext {/vernellm}
+
+\def \phoneicon {\faPhone}
+\def \phonelink {tel:504-453-3583}
+\def \phonetext {(504) 453-3583}
+
+\definecolor{LinkColor}{HTML}{3e70bb}
+
+\def \linkedin {\linkedinicon\hspace{3pt}\textcolor{LinkColor}{\href{\linkedinlink}{\linkedintext}}}
+\def \email {\emailicon\hspace{3pt}\textcolor{LinkColor}{\href{\emaillink}{\emailtext}}}
+
+\def \github {\githubicon \hspace{3pt}\textcolor{LinkColor}{\href{\githublink}{\githubtext}}}
+
+\def \website {\websiteicon\hspace{3pt}\textcolor{LinkColor}{\href{\websitelink}{\websitetext}}}
+
+\def \phone {\phoneicon\hspace{3pt}\textcolor{LinkColor}{\href{\phonelink}{\phonetext}}}
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vernell Mangum} \\ \vspace{1pt}
+    {\email} $|$ 
+    {\phone} $|$ 
+    {\linkedin} $|$
+    {\github}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of New Orleans}{August 2014 - December 2022}
+      {Bachelor of Science in Computer Science - GPA: 3.00}{New Orleans, LA}
+      
+  \resumeSubHeadingListEnd
+  
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}\hspace*{1cm}{Python, Java, Swift, HTML, CSS, JavaScript, SQL, C++} \\
+     \textbf{Technologies}\hspace*{0.6cm}{Git, REST APIs, Unity, Xcode} \\
+     \textbf{Libraries}\hspace*{1.25cm}{Node.js, React/React Native, NumPy, Pandas, Matplotlib} \\
+     \textbf{DevOps}\hspace*{1.4cm}{Amazon Web Services (AWS), GitHub Actions, Docker} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {Target}{June 2021 - Present}
+      {Tech Consultant}{Metairie, LA}
+      \resumeItemListStart
+      %\resumeItem {Provided  .} TALK ABOUT OBSERVABILITY SERVICE HERE
+      %\resumeItem {Provided  .} TALK ABOUT GITHUB ACTIONS LOGS HERE
+      \resumeItem {Lead my team in sales regarding recommended technology upgrades to improve client way of life. Earned company approx. \$100,000 annually by efficiently keeping backroom and sales floor inventory accuracy +90\% weekly.  90\% Guest Satisfaction rate as well as 95\% inventory management accuracy.}
+      \resumeItem {Analyzed client business processes to propose optimal software applications for unique requirements.}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated Text-To-Speech Storage Program w/ Machine Learning (AWS) } $|$ \emph{Python, Amazon Web Services}}{}
+          \resumeItemListStart
+            \resumeItem{A simple, automated TTS program that takes any text file on the user's machine, converts that file into a voice file, and stores the voice file on the user's machine. }
+            \resumeItem{Used Amazon Polly (ML) and the AWS CLI to convert text files into voice files to be used by the user's machine.}
+            \resumeItem{Used multiple AWS Services to automate, store and notify the user that the text file has been stored successfully; including: Amazon Polly, SNS, Lambda, S3, and DynamoDB.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{A Really Loud Mobile App} $|$ \emph{JavaScript, React Native, Node.js}}{}
+          \resumeItemListStart
+            \resumeItem{Built an application that demonstrates 4 core operations when manipulating data in mobile applications efficiently; Create, Read, Update, Delete.}
+            \resumeItem{The app was built using Javascript, React, and Node. The app allows the user to assemble a team of characters to carry out different adventures to acquire gold and other goods that can be used to increase a character's level. Each character has their own unique level, can be sent on adventures, and removed from your team at any time. }
+            \resumeItem{Adventures have difficulty levels that can determine how much gold a team member will come back with and how much health the character loses. Implements CRUD features without the use of any external libraries, mainly using Contexts and Providers.   }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Mobile Combat Calculator} $|$ \emph{JavaScript, React Native, Node.js}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a mobile application that allows the user to create one character by assigning skill points to 3 different attributes; Health, Magic, Strength. The user is allowed a set number of skill points to be assigned.}
+            \resumeItem{The user then takes their created character and participates in a boss battle. The user can physically attack the enemy, heal some of your own health, or use magic to cast a spell. The effectiveness of healing and using magic is dependent on the user's magic stat.  }
+            \resumeItem{The enemy can also attack back or choose to heal based on which move the user chose. Enemy has dialogue that is tailored to the different moves that are used as well as the outcome of the battle.   }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Gym Buddies} $|$ \emph{In-Development} $|$ \emph{Swift, SwiftUI, MapKit}}{}
+          \resumeItemListStart
+            \resumeItem{Currently developing an iOS application that will allow users to sign up, add each other friends, and share information about exercises which includes: schedules, notes, specific exercises, as well at the option to notify a friend when you are attending the gym. A "check-in" app. }
+            \resumeItem{It will be developed using Swift and supporting libraries for the front-end and it will use Firebase for user authorization and data management. It will feature push notifications, a space to share ideas, a friend list as well as a heap of security preferences in order to provide more customization.  }
+            \resumeItem{This app is being developed from a social standpoint and the target audience is students at colleges and universities. It will be a unique tool to help more timid personalities to find a hobby and promote a healthy and active lifestyle for all people. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
